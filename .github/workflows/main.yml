@@ -38,7 +38,7 @@ jobs:
           target: /home/ubuntu/
 
       - name: Deploy to K3s on EC2
-        uses: appleboy/ssh-action@v0.2.3
+        uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ env.EC2_HOST }}
           username: ${{ env.AWS_USER }}
